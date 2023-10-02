@@ -1,6 +1,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import TopNav from './includes/TopNav';
+import SideNavMain from './includes/SideNavMain';
 
 export default function MainLayout({
   children,
@@ -17,6 +18,7 @@ export default function MainLayout({
           pathname == '/' ? 'max-w-[1440px]' : ''
         }`}
       >
+        <SideNavMain />
         {children}
       </div>
     </>
